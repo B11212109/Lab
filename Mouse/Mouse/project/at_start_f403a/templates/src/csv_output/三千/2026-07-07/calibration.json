@@ -1,0 +1,13 @@
+{
+    "weight_reference_g": 200.0,
+    "calibration_date": "2026-07-07 13:53:53",
+    "formula": "weight_g = (raw - no_load_offset) / scale_count_per_g",
+    "csv_format": "Time_Rel,CH1_Raw",
+    "CH1": {
+        "no_load_offset": 483912.4568288854,
+        "loaded_raw_mean": 1811370.0203761756,
+        "raw_diff": 1327457.5635472902,
+        "scale_count_per_g": 6637.287817736451,
+        "gram_per_count": 0.00015066395001400365
+    }
+}

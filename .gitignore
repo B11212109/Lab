@@ -1,0 +1,50 @@
+.agents/
+.codex/
+.vscode/
+output/
+_codex_tmp_nested_git/
+
+# Python/local environments
+**/.venv/
+**/venv/
+__pycache__/
+*.py[cod]
+
+# Build and generated output
+**/Debug/
+**/Release/
+**/build/
+**/bin/
+**/obj/
+**/objects/
+**/Objects/
+**/listings/
+**/Listings/
+
+# Keil/embedded build artifacts and user-local files
+*.o
+*.obj
+*.elf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.crf
+*.dep
+*.htm
+*.lnp
+*.sct
+*.uvguix.*
+*.uvoptx
+
+# Temporary/editor files
+*.bak
+*.tmp
+*.log
+*.user
+*.swp
+*.swo
+Thumbs.db
+desktop.ini

@@ -1,0 +1,33 @@
+{
+    "weight_reference_g": 50.0,
+    "calibration_date": "2026-04-17 16:45:12",
+    "formula": "weight_g = (raw - no_load_offset) / scale_count_per_g",
+    "CH1": {
+        "no_load_offset": 476.863309352518,
+        "loaded_raw_mean": 476.9492753623188,
+        "raw_diff": 0.08596600980081348,
+        "scale_count_per_g": 1.0,
+        "gram_per_count": null
+    },
+    "CH2": {
+        "no_load_offset": 4359021.598920863,
+        "loaded_raw_mean": 5459320.219202898,
+        "raw_diff": 1100298.6202820353,
+        "scale_count_per_g": 22005.972405640707,
+        "gram_per_count": 4.544220912245049e-05
+    },
+    "CH3": {
+        "no_load_offset": 543.6708633093525,
+        "loaded_raw_mean": 1373.7554347826087,
+        "raw_diff": 830.0845714732562,
+        "scale_count_per_g": 16.601691429465124,
+        "gram_per_count": 0.06023482632770619
+    },
+    "CH4": {
+        "no_load_offset": 303.11690647482015,
+        "loaded_raw_mean": 308.45108695652175,
+        "raw_diff": 5.334180481701594,
+        "scale_count_per_g": 0.10668360963403188,
+        "gram_per_count": 9.373511108504918
+    }
+}
