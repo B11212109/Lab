@@ -1,0 +1,19 @@
+# Private keys and local connection settings
+*.key
+**/.vscode/
+.env
+.env.*
+!.env.example
+
+# Certificate requests and serial numbers
+*.csr
+*.srl
+
+# Recorded audio
+server/received_files/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/

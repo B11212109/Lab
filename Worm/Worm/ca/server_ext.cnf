@@ -1,0 +1,10 @@
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[alt_names]
+# sudo nano /etc/hosts
+# 
+DNS.1 = worm.server.local
+# IP.2 = 127.0.0.1
