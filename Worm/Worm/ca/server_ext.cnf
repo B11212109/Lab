@@ -6,5 +6,5 @@ subjectAltName = @alt_names
 [alt_names]
 # sudo nano /etc/hosts
 # 
-DNS.1 = worm.server.local
+DNS.1 = WormSoundServer
 # IP.2 = 127.0.0.1

@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # 啟動伺服器，監聽 8000 port
     uvicorn.run(
         app,
-        host="192.168.51.253",
+        host="192.168.51.102", #後續根據伺服器IP修改
         port=8000,
         access_log=False,
         ssl_keyfile=str(CERT_DIR / "server.key"),

@@ -18,7 +18,8 @@ BLOCK_SIZE = 4096  # 每次回呼處理的取樣點數（越小延遲越低，�
 TARGET_SAMPLES = 65536  # 你真正想要存檔的長度
 
 CERT_DIR = Path(__file__).parent / "cert"
-SERVER_URL = "http://worm.server.local:8000/upload"
+SERVER_URL = "https://WormSound:8000/upload" #這是更改後的伺服器
+#SERVER_URL = "http://worm.server.local:8000/upload"
 
 # 1. 建立一個執行緒安全的佇列（Queue）
 # maxsize 限制佇列長度，避免 Worker 處理太慢導致記憶體被塞爆

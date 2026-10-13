@@ -21,7 +21,7 @@ subjectAltName = @alt_names
 # ```
 # 192.168.1.100 worm.server.local
 # ```
-DNS.1 = worm.server.local
+DNS.1 = WormSoundServer
 # IP.2 = 127.0.0.1
 EOF
 
