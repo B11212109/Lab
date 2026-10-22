@@ -2,8 +2,7 @@ import ssl
 import numpy as np
 import httpx
 
-SERVER_URL = "https://WormSound:8000/upload" #這是更改後的伺服器
-#SERVER_URL = "https://worm.server.local:8000/upload"
+SERVER_URL = "https://WormSoundServer:8000/upload"
 
 # 1. 使用 Python 標準庫建立 SSL 上下文，避開 httpx 的 Bug
 ssl_context = ssl.create_default_context(cafile="./cert/ca.crt")
