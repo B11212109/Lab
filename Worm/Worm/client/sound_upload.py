@@ -15,7 +15,7 @@ DEVICE_ID = 0  # 填入第三步查到的 USB 音效卡編號；若設為 None �
 SAMPLE_RATE = 44100  # 取樣率（常見支援：16000, 44100, 48000）
 CHANNELS = 1  # 聲道數（USB 麥克風通常為 1 (單聲道) 或 2 (雙聲道)）
 BLOCK_SIZE = 4096  # 每次回呼處理的取樣點數（越小延遲越低，但 CPU 負擔略增）
-TARGET_SAMPLES = 65536  # 你真正想要存檔的長度
+TARGET_SAMPLES = 229376  # 你真正想要存檔的長度
 
 CERT_DIR = Path(__file__).parent / "cert"
 SERVER_URL = "https://WormSoundServer:8000/upload"
