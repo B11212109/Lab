@@ -10,6 +10,7 @@
 *.srl
 
 # Recorded audio
+received_files/
 server/received_files/
 
 # Python caches and virtual environments
