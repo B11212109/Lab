@@ -40,6 +40,7 @@ def main():
             channels=CHANNELS,
             samplerate=SAMPLE_RATE,
             blocksize=BLOCK_SIZE,
+            dtype="int16",
             callback=audio_callback,
         ):
             # 保持主執行緒運作

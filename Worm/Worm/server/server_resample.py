@@ -5,6 +5,7 @@ import ssl
 import numpy as np
 import soundfile as sf
 import soxr
+import time
 
 from fastapi import FastAPI, Header, HTTPException, Request
 from pathlib import Path
@@ -60,7 +61,9 @@ async def upload_raw_audio(
     # 4. 上鎖，確保共用的重取樣器與 Buffer 不被同時修改
     async with audio_lock:
         # 保留跨 HTTP 批次的重取樣濾波器狀態
+        t_resample = time.perf_counter()
         audio_16k = resampler.resample_chunk(audio_array, last=False)
+        resample_ms = (time.perf_counter() - t_resample) * 1000
 
         # 新樣本銜接到原有的剩餘樣本後面
         audio_buffer = np.concatenate((audio_buffer, audio_16k))
@@ -75,7 +78,11 @@ async def upload_raw_audio(
             output_filename = f"audio_{timestamp}_{file_index:06d}.wav"
             output_path = SAVE_DIR / output_filename
 
+            t_save = time.perf_counter()
             sf.write(output_path, segment, OUTPUT_SAMPLE_RATE, subtype="FLOAT")
+            save_ms = (time.perf_counter() - t_save) * 1000
+            print(f"[Timing] SoXR 重取樣: {resample_ms:.2f} ms")
+            print(f"[Timing] WAV 儲存: {save_ms:.2f} ms")
             saved_files.append(output_filename)
 
             # 保留尚未用到的音訊，等待下一次 HTTP 上傳

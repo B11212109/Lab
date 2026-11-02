@@ -1,0 +1,11 @@
+﻿dataset,method,mean_ms,median_ms,std_ms,p95_ms,rtf,repeats,warmups,input_dtype,algorithm_input_dtype,native_output_dtype,resampling_output_dtype,output_dtype,internal_precision
+synthetic,Linear,2.5994133333333336,2.5948,0.019159885057126458,2.638115,0.0005198826666666667,30,3,int16,float32,float64,float32,int16,float64 native interpolation; cast to float32
+synthetic,FFT,2.09622,2.0521000000000003,0.1574179882811452,2.316975,0.00041924400000000004,30,3,int16,float32,float32,float32,int16,float32 arrays; library intermediates not instrumented
+synthetic,Cubic,20.40646666666667,20.02485,1.9966742037928855,22.770049999999994,0.004081293333333335,30,3,int16,float32,float64,float32,int16,float64 native interpolation; cast to float32
+synthetic,Polyphase,2.2174066666666667,2.1879999999999997,0.09037176066912042,2.37269,0.00044348133333333334,30,3,int16,float32,float32,float32,int16,float32 arrays; library intermediates not instrumented
+synthetic,SoXR_HQ,0.8661333333333333,0.84965,0.047629752606257916,0.9714199999999998,0.00017322666666666665,30,3,int16,int16,int16,int16,int16,libsoxr implementation; not inferred from int16 API
+recorded,Linear,2.5265,2.5103999999999997,0.11394406976443644,2.7431499999999995,0.0005053,30,3,int16,float32,float64,float32,int16,float64 native interpolation; cast to float32
+recorded,FFT,2.4340766666666664,2.33285,0.3278035278715858,3.0484299999999993,0.0004868153333333333,30,3,int16,float32,float32,float32,int16,float32 arrays; library intermediates not instrumented
+recorded,Cubic,18.575840000000003,18.560299999999998,0.3147262582867411,19.16169,0.0037151680000000005,30,3,int16,float32,float64,float32,int16,float64 native interpolation; cast to float32
+recorded,Polyphase,2.2571066666666666,2.23025,0.08418226094297583,2.3839449999999998,0.00045142133333333335,30,3,int16,float32,float32,float32,int16,float32 arrays; library intermediates not instrumented
+recorded,SoXR_HQ,0.9237833333333332,0.91275,0.05008670470799359,1.0113599999999998,0.00018475666666666665,30,3,int16,int16,int16,int16,int16,libsoxr implementation; not inferred from int16 API

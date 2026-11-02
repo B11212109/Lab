@@ -1,0 +1,11 @@
+﻿dataset,method,samples,samplerate,channels,subtype,duration_s,peak_pcm,rail_sample_count
+synthetic,Linear,80000,16000,1,PCM_16,5.0,24000,0
+synthetic,FFT,80000,16000,1,PCM_16,5.0,18545,0
+synthetic,Cubic,80000,16000,1,PCM_16,5.0,24000,0
+synthetic,Polyphase,80000,16000,1,PCM_16,5.0,18042,0
+synthetic,SoXR_HQ,80000,16000,1,PCM_16,5.0,18001,0
+recorded,Linear,80000,16000,1,PCM_16,5.0,7367,0
+recorded,FFT,80000,16000,1,PCM_16,5.0,7367,0
+recorded,Cubic,80000,16000,1,PCM_16,5.0,7376,0
+recorded,Polyphase,80000,16000,1,PCM_16,5.0,7376,0
+recorded,SoXR_HQ,80000,16000,1,PCM_16,5.0,7369,0

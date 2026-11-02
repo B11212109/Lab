@@ -1,0 +1,108 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "python": "3.14.7 (main, Aug 14 2026, 15:39:58) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "soundfile": "0.14.0",
+    "soxr": "1.1.0",
+    "matplotlib": "3.11.2",
+    "pyqtgraph": "0.14.0",
+    "PySide6-Essentials": "6.12.0"
+  },
+  "inputs": {
+    "synthetic": {
+      "path": "C:\\Users\\howar\\Lab\\Worm\\Worm\\resample\\synthetic_test.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "samples": 220500,
+      "duration": 5.0,
+      "sha256": "3fb2c81435f5f4ca9093a76dc5df754ce04f2551acb0e3e7eca22472401f50f6"
+    },
+    "recorded": {
+      "path": "C:\\Users\\howar\\Lab\\Worm\\Worm\\resample\\audio_20261029180204.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "samples": 220500,
+      "duration": 5.0,
+      "sha256": "bc0d0f5754876b7ceba8754c24f6ac09c105950e5183b9c4b2a2902475268abd"
+    }
+  },
+  "run_time_asia_taipei": "2026-11-02T11:03:07.494099+08:00",
+  "synthetic_segments": [
+    {
+      "start_s": 0.0,
+      "end_s": 0.6,
+      "frequency_hz": 1000
+    },
+    {
+      "start_s": 0.6,
+      "end_s": 1.2,
+      "frequency_hz": 6000
+    },
+    {
+      "start_s": 1.2,
+      "end_s": 1.8,
+      "frequency_hz": 7400
+    },
+    {
+      "start_s": 1.8,
+      "end_s": 2.4,
+      "frequency_hz": 10000
+    },
+    {
+      "start_s": 2.4,
+      "end_s": 3.0,
+      "frequency_hz": 15000
+    },
+    {
+      "start_s": 3,
+      "end_s": 4.6,
+      "chirp_start_hz": 200,
+      "chirp_end_hz": 20000
+    },
+    {
+      "start_s": 4.6,
+      "end_s": 5,
+      "impulse_time_s": 4.8,
+      "impulse_amplitude": 24000
+    }
+  ],
+  "tone_amplitude_pcm": 18000,
+  "fade_ms": 10,
+  "tone_boundary_exclusion_ms": 80,
+  "amplitude_floor_pcm": 1,
+  "psd_window_ms": 40,
+  "spectrogram_hop_ms": 10,
+  "quality_measurement": "quantized PCM_16 outputs",
+  "methods": {
+    "Linear": [
+      "float32",
+      "float32",
+      "numpy.interp; native float64 result cast to float32; no anti-alias filter"
+    ],
+    "FFT": [
+      "float32",
+      "float32",
+      "scipy.signal.resample; window=None; periodic extension"
+    ],
+    "Cubic": [
+      "float32",
+      "float32",
+      "CubicSpline; native float64 coefficients/result cast to float32; not-a-knot; no anti-alias filter"
+    ],
+    "Polyphase": [
+      "float32",
+      "float32",
+      "resample_poly; up=160 down=441; window=(kaiser,5.0); padtype=constant"
+    ],
+    "SoXR_HQ": [
+      "int16",
+      "int16",
+      "soxr.resample; quality=HQ; libsoxr internal precision not inferred from interface"
+    ]
+  }
+}
